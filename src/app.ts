@@ -10,7 +10,7 @@ import { encode } from "gpt-3-encoder";
 import { randomUUID } from "crypto";
 import { config } from "dotenv";
 
-config();
+config({path:".env"});
 
 // Constants for the server and API configuration
 const port = process.env.SERVER_PORT || 3040;
